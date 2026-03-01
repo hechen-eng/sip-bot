@@ -47,6 +47,9 @@ async def my_agent(ctx: agents.JobContext):
                 sip_call_to=phone_number,
                 participant_identity=sip_participant_identity,
 
+                # Headers sent on the INVITE (e.g. for VoIPmonitor RTP capture)
+                headers={"X-LIVEKIT-STORE-RTP": "1"},
+
                 # This will wait until the call is answered before returning
                 wait_until_answered=True,
             ))

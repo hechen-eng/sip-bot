@@ -11,7 +11,7 @@ To create agent, run
 lk agent create
 ```
 
-After making some changes, do
+After making some changes, run
 ```
 lk agent deploy
 ```
